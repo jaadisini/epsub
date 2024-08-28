@@ -13,32 +13,32 @@ from logging.handlers import RotatingFileHandler
 TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "")
 
 #Your API ID from my.telegram.org
-APP_ID = int(os.environ.get("APP_ID", ""))
+APP_ID = int(os.environ.get("APP_ID", "21118585"))
 
 #Your API Hash from my.telegram.org
-API_HASH = os.environ.get("API_HASH", "")
+API_HASH = os.environ.get("API_HASH", "ee05a7c74bd7dc0a8b2c6d0cbb0caf47")
 
 #Your db channel Id
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1001504198267"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002197478715"))
 
 #OWNER ID
-OWNER_ID = int(os.environ.get("OWNER_ID", "5191566338"))
+OWNER_ID = int(os.environ.get("OWNER_ID", "7035291765"))
 
 #Port
-PORT = os.environ.get("PORT", "8036")
+PORT = os.environ.get("PORT", "8039")
 
 #Database
 DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://sonu55:sonu55@cluster0.vqztrvk.mongodb.net/?retryWrites=true&w=majority")
 DB_NAME = os.environ.get("DATABASE_NAME", "filesharexbot")
 
 #force sub channel id, if you want enable force sub
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1001967812554"))
-FORCE_SUB_CHANNEL2 = int(os.environ.get("FORCE_SUB_CHANNEL2", "-1001854801685"))
+FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1001995389508"))
+FORCE_SUB_CHANNEL2 = int(os.environ.get("FORCE_SUB_CHANNEL2", "-1002108401039"))
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
 #start message
-START_MSG = os.environ.get("START_MESSAGE", "Hello {first} , Thanks for using me :D @Anime_Alliance ⚡️.")
+START_MSG = os.environ.get("START_MESSAGE", "Hello {first} , Thanks for using me Join Now: @Nottylinkshub 🍒.")
 try:
     ADMINS=[6376328008]
     for x in (os.environ.get("ADMINS", "").split()):
@@ -47,13 +47,13 @@ except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
 
 #Force sub message 
-FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "👋 Hello {first}!\nPlease Join our channel First [ᴛᴀᴘ ᴏɴ ᴊᴏɪɴ ⚡] then\n Download by tapping on ⚡️Try Again  \nThank You ❤️")
+FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "HEY {first}🌺\n \nPlease Join our channel First [ᴛᴀᴘ ᴏɴ ᴊᴏɪɴ 🥹]\n Then\n \n Watching by tapping on ♻️ RELOAD  \nThank You ❤️")
 
 #set your Custom Caption here, Keep None for Disable Custom Caption
 CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", None)
 
 #set True if you want to prevent users from forwarding files from bot
-PROTECT_CONTENT = True if os.environ.get('PROTECT_CONTENT', "False") == "True" else False
+PROTECT_CONTENT = True if os.environ.get('PROTECT_CONTENT', "True") == "True" else False
 
 #Set true if you want Disable your Channel Posts Share button
 DISABLE_CHANNEL_BUTTON = os.environ.get("DISABLE_CHANNEL_BUTTON", None) == 'True'
