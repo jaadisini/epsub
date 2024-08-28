@@ -28,7 +28,7 @@ OWNER_ID = int(os.environ.get("OWNER_ID", "7035291765"))
 PORT = os.environ.get("PORT", "8040")
 
 #Database
-DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://instahooboo:<db_password>@cluster0.mgj6i.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://instahooboo:instahooboo@cluster0.mgj6i.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DB_NAME = os.environ.get("DATABASE_NAME", "instahooboo")
 
 #force sub channel id, if you want enable force sub
